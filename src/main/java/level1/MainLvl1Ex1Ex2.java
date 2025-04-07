@@ -1,6 +1,6 @@
 package level1;
 
-import level1.controller.RunMain;
+import level1.mainRunner.RunMain;
 
 public class MainLvl1Ex1Ex2 {
 

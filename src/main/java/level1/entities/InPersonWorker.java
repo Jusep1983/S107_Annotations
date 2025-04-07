@@ -1,7 +1,7 @@
 package level1.entities;
 
 public class InPersonWorker extends Worker {
-    private static double gasoline = 111;
+    private final double GASOLINE = 111;
 
     public InPersonWorker(String name, String surname, double hourlyPrice) {
         super(name, surname, hourlyPrice);
@@ -18,7 +18,7 @@ public class InPersonWorker extends Worker {
 
     @Override
     public String calculateSalary(int numberOfHours) {
-        return "Mi salario és de " + (super.hourlyPrice * numberOfHours + gasoline) + " €.";
+        return "Mi salario és de " + (super.hourlyPrice * numberOfHours + GASOLINE) + " €.";
     }
 
     @Override

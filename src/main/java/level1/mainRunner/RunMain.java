@@ -1,4 +1,4 @@
-package level1.controller;
+package level1.mainRunner;
 
 import level1.entities.InPersonWorker;
 import level1.entities.OnlineWorker;

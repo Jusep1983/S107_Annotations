@@ -14,7 +14,7 @@ public class JsonProcessor {
             Class<?> clazz = object.getClass();
             JsonSerializable annotation = clazz.getAnnotation(JsonSerializable.class);
             if (annotation == null) {
-                throw new NullPointerException("\"@JsonSerializable\" no disponible para ");
+                checkForNullAnnotation();
             } else {
                 String directory = Paths.get("src", "main", "java", "level2AndLevel3"
                         , annotation.directory()).toString();
@@ -26,12 +26,17 @@ public class JsonProcessor {
 
             }
         } catch (NullPointerException e) {
-            System.out.println("Error al serializar objectos tipo " + object.getClass().getSimpleName()
+            System.out.println("Error al serializar objetos tipo " + object.getClass().getSimpleName()
                                + ", " + e.getMessage()
             );
         } catch (IOException e) {
-            throw new UncheckedIOException("Error en serialización", e);
+            System.out.println("Error en serialización" + e.getMessage());
         }
+
+    }
+
+    private static void checkForNullAnnotation() {
+        throw new NullPointerException("\"@JsonSerializable\" no disponible.");
     }
 
 }
