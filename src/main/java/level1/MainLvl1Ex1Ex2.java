@@ -1,12 +1,12 @@
 package level1;
 
-import level1.mainRunner.RunMain;
+import level1.application.ApplicationLauncher;
 
 public class MainLvl1Ex1Ex2 {
 
     public static void main(String[] args) {
 
-        RunMain.run();
+        ApplicationLauncher.run();
 
     }
 

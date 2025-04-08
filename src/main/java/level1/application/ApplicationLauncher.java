@@ -1,10 +1,10 @@
-package level1.mainRunner;
+package level1.application;
 
 import level1.entities.InPersonWorker;
 import level1.entities.OnlineWorker;
 import level1.entities.Worker;
 
-public class RunMain {
+public class ApplicationLauncher {
 
     public static void run() {
 

@@ -1,11 +1,11 @@
-package level2AndLevel3.mainRunner;
+package level2AndLevel3.application;
 
 import level2AndLevel3.interfaces.JsonSerializable;
 import level2AndLevel3.model.Car;
 import level2AndLevel3.model.Person;
 import level2AndLevel3.services.JsonProcessor;
 
-public class RunMain {
+public class ApplicationLauncher {
     public static void run() {
 
         try {
