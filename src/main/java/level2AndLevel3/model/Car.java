@@ -18,6 +18,10 @@ public class Car {
         return name;
     }
 
+    public String getBrand() {
+        return brand;
+    }
+
     @Override
     public String toString() {
         return "Car{" + "name: " + name + ", brand: " + brand + "}";

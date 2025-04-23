@@ -7,7 +7,7 @@ public class OnlineWorker extends Worker {
         super(name, surname, hourlyPrice);
     }
 
-    @SuppressWarnings("deprecated")
+    @Deprecated
     public String happyWithSalary(boolean isHappy) {
         if (isHappy) {
             return "Estoy contento con mi salario. ";

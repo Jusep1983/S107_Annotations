@@ -6,6 +6,7 @@ import level1.entities.Worker;
 
 public class ApplicationLauncher {
 
+    @SuppressWarnings("deprecation")
     public static void run() {
 
         Worker justWorker = new Worker("Salvador", "Deallí", 20);
